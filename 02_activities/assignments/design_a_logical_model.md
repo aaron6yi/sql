@@ -31,9 +31,10 @@ Yes, there are privacy implications to storing customer addresses, especially if
 Review the AdventureWorks Schema [here](https://i.stack.imgur.com/LMu4W.gif)
 
 Highlight at least two differences between it and your ERD. Would you change anything in yours?
-```
-Your answer...
-```
+
+Compared to the AdventureWorks Schema, one key difference is how customer addresses are managed. In AdventureWorks, customer addresses are handled with a separate `Address` table and a linking `CustomerAddress` table. This creates a many-to-many relationship, allowing a customer to have multiple addresses, and the same address can be associated with multiple customers. For instance, a customer might have a billing address and a separate shipping address, while different customers might share a common office address. In contrast, our ERD has a simpler one-to-one relationship between customers and addresses, with address information stored directly. This limits the ability to manage multiple addresses or handle situations where different customers share the same address.
+
+Another significant difference is how AdventureWorks manages product inventory. AdventureWorks uses a dedicated `Product` table, which is highly detailed, with fields for product category, model, and additional metadata such as weight or color. This level of detail helps track a wide range of products with specific characteristics. In our ERD, the `Book` table is much simpler, with basic fields such as title, author, and price. While sufficient for a small bookstore, this design might not scale well if we were to expand inventory to include products with more attributes, such as different editions, formats, or special categories.
 
 # Criteria
 
@@ -53,9 +54,9 @@ Your answer...
     * Open a private window in your browser. Copy and paste the link to your pull request into the address bar. Make sure you can see your pull request properly. This helps the technical facilitator and learning support staff review your submission easily.
 
 Checklist:
-- [ ] Create a branch called `model-design`.
-- [ ] Ensure that the repository is public.
-- [ ] Review [the PR description guidelines](https://github.com/UofT-DSI/onboarding/blob/main/onboarding_documents/submissions.md#guidelines-for-pull-request-descriptions) and adhere to them.
-- [ ] Verify that the link is accessible in a private browser window.
+- [x] Create a branch called `model-design`.
+- [x] Ensure that the repository is public.
+- [x] Review [the PR description guidelines](https://github.com/UofT-DSI/onboarding/blob/main/onboarding_documents/submissions.md#guidelines-for-pull-request-descriptions) and adhere to them.
+- [x] Verify that the link is accessible in a private browser window.
 
 If you encounter any difficulties or have questions, please don't hesitate to reach out to our team via our Slack at `#cohort-4-help`. Our Technical Facilitators and Learning Support staff are here to help you navigate any challenges.
