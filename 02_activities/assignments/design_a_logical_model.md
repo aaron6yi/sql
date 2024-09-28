@@ -17,10 +17,11 @@ The store wants to keep customer addresses. Propose two architectures for the CU
 
 _Hint, search type 1 vs type 2 slowly changing dimensions._
 
+### Type 1: Retain Changes
+
+
 Bonus: Are there privacy implications to this, why or why not?
-```
-Your answer...
-```
+![Logical Model](Q3.png)
 
 ## Question 4
 Review the AdventureWorks Schema [here](https://i.stack.imgur.com/LMu4W.gif)
