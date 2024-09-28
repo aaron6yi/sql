@@ -25,6 +25,8 @@ _Hint, search type 1 vs type 2 slowly changing dimensions._
 
 Bonus: Are there privacy implications to this, why or why not?
 
+Yes, there are privacy implications to storing customer addresses, especially if the database retains historical address records. This is because personal address information is sensitive, and mishandling it could lead to privacy breaches. To ensure compliance with privacy laws, it’s crucial that customers provide clear consent before their data is collected and stored. Additionally, if a customer requests their information to be deleted, the database must be capable of removing not only the current and historical address records.
+
 ## Question 4
 Review the AdventureWorks Schema [here](https://i.stack.imgur.com/LMu4W.gif)
 
