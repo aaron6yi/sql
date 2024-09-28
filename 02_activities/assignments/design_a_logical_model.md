@@ -21,6 +21,7 @@ _Hint, search type 1 vs type 2 slowly changing dimensions._
 ![Logical Model](Q3_1.png)
 
 ### Type 2: retain changes
+![Logical Model](Q3_2.png)
 
 Bonus: Are there privacy implications to this, why or why not?
 
